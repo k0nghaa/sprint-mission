@@ -1,16 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+  color: #374151;
+}
+
+
 html {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   word-break: keep-all;
 }
 
-body {
-  color: #374151;
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  background: red;
 }
 
-.container {
+.header-logo { 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
+
 
 h1 {
   font-weight: 700;
@@ -19,52 +37,43 @@ h1 {
 
 
 header {
-  max-width: 1920px;
   width: 100%;
+  max-width: 1120px;
   height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
-#login-button {
+
+header button {
   width: 128px;
   height: 48px;
   border-radius: 8px;
 }
 
+.cards {
+  width: 988px;
+  height: 444px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .landing {
   height: 540px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   background-color: #CFE5FF;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-}
-
-#look-around-button {
+.landing button {
   width: 357px;
   height: 56px;
   border-radius: 40px;
 }
 
-#login-button,
-#look-around-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;  
+button {
   font-weight: 600;
   background-color: #3692FF;
   color: #F3F4F6
 }
 
 footer {
-  display: flex;
   background-color: #111827;
   color: #E5E7EB;
 }
